@@ -15,6 +15,21 @@
 </head>
 <body>
 <h1>Animals by Ruchitha Merugu</h1>
+<nav class="navbar navbar-expand-md navbar-light bg-light">
+    <a class="navbar-brand" href="animals.html">Interesting Animals</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" ></button> 
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup"></div>
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-link active">
+        <a class="nav-link active" href="plane.html">plane</a>
+      </li>
+      <li class="nav-link active">
+        <a class="nav-link active" href="train.html">train</a>
+      </li>
+     </ul>
+     </nav> 
+     <br> 
 <div class="container">
     <div class="row">
         <div class="col-sm-2">M</div>
@@ -126,23 +141,66 @@ height="500"
     </tr>
   </tbody>
 </table>
-
-<div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups"></div>
-<div class="btn btn-group-lg" role="group">
+<h2>Buttons and Button Groups</h2> 
+<div class="btn-toolbar" role="toolbar">
+  <button type="button" class="btn btn-default">M</button>
+  <button type="button" class="btn btn-default">E</button>
+  <button type="button" class="btn btn-default">R</button>
+  <button type="button" class="btn btn-default">U</button>
+  <button type="button" class="btn btn-default">G</button>
+  <button type="button" class="btn btn-default">U</button>
+</div>
+<br>
+<div class = "btn-toolbar" role = "toolbar" aria-label="First group success">
   <button type="button" class="btn btn-success">M</button>
   <button type="button" class="btn btn-success">E</button>
+  <button type="button" class="btn btn-success">R</button>
+  </div>
+  <br>
+  <div class = "btn-toolbar" role = "toolbar" aria-label="Second group warning">
+    <button type="button" class="btn btn-warning">U</button>
+    <button type="button" class="btn btn-warning">G</button>
+  </div>
+  <br>
+  <div class = "btn-toolbar" role = "toolbar" aria-label="Third group danger">
+    <button type="button" class="btn btn-warning">U</button>
 </div>
+</div>
+<br>
+<div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+  <button type="button" class="btn btn-primary">1</button>
+  <button type="button" class="btn btn-primary">2</button>
 
-<div class="btn btn-group-lg" role="group" aria-label="Basic example">
-  <button type="button" class="btn btn-alert">R</button>
-  <button type="button" class="btn btn-alert">U</button>
+  <div class="btn-group" role="group">
+    <button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+      Dropdown
+    </button>
+    <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+      <li><a class="dropdown-item" href="plane.html">Plain</a></li>
+      <li><a class="dropdown-item" href="train.html">Train</a></li>
+    </ul>
+  </div>
 </div>
+<br>
+<br>
 
-<div class="btn btn-group-lg" role="group" aria-label="Basic example">
-  <button type="button" class="btn btn-danger">G</button>
-  <button type="button" class="btn btn-danger">U</button>
-</div>
-</div>
+<form>
+  <div class="form-group">
+    <label for="exampleInputEmail1" class="form-label">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputAnimal" class="form-label">Enter your Animal</label>
+    <input type="text" class="form-control">
+  </div>
+  <div class="form-check">
+    <label class="form-check-label"> Sign up for newsletter?</label>
+    <input type="checkbox" class="form-check-input">  
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
 
+ 
 </body>
 </html>
